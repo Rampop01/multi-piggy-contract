@@ -1,18 +1,20 @@
-require("@nomicfoundation/hardhat-toolbox");
+import "@nomicfoundation/hardhat-toolbox";
 require("dotenv").config();
-const {ALCHEMY_SEPOLIA_API_KEY_URL,ACCOUNT_PRIVATE_KEY,ETHERSCAN_API_KEY}= process.env
 
-module.exports = {
+
+const config = {
   solidity: "0.8.28",
 
   networks: {
   
     sepolia: {
-      url: ALCHEMY_SEPOLIA_API_KEY_URL,
-      accounts: [`0x${ACCOUNT_PRIVATE_KEY}`]
+      url: process.env.ALCHEMY_SEPOLIA_API_KEY_URL,
+      accounts: [`0x${process.env.ACCOUNT_PRIVATE_KEY}`]
     },
   },
   etherscan: {
-    apiKey: ETHERSCAN_API_KEY,
+    apiKey: process.env.ETHERSCAN_API_KEY,
   },
 };
+
+export default config;

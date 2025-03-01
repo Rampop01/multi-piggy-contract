@@ -4,7 +4,7 @@ pragma solidity ^0.8.19;
 import {onchainThrift} from "./MyPiggy.sol";
 import "./IErrors.sol";
 
-contract PiggyBankFactory is IErrors {
+contract MyPiggyFactory is IErrors {
     address public immutable developer;
     address[] public allowedTokens;
     mapping(address => address[]) public userPiggyBanks; // Track user's piggy banks

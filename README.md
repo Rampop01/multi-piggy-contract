@@ -1,13 +1,6 @@
-# Sample Hardhat Project
+MyPiggyFactory deployed to: 0xf1f4DA797a29986F65475B0c67CFed862B36759a
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
 
-Try running some of the following tasks:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
-```
+Successfully verified contract MyPiggyFactory on the block explorer.
+https://sepolia.etherscan.io/address/0xf1f4DA797a29986F65475B0c67CFed862B36759a#code
